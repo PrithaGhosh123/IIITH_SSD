@@ -1,0 +1,7 @@
+SELECT D.Dname, D.Dnumber, COUNT(L.Dlocation) 
+FROM DEPARTMENT D JOIN DEPT_LOCATIONS L 
+ON D.Dnumber = L.Dnumber 
+JOIN DEPENDENT P 
+ON P.Essn = D.Mgr_ssn 
+WHERE P.Essn in (SELECT Essn FROM DEPENDENT WHERE Sex ='F' GROUP BY Essn HAVING COUNT(Essn) > 1) GROUP BY D.Dnumber;
+
