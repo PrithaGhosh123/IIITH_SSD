@@ -1,0 +1,30 @@
+#addbtn{
+    background-color: green;
+}
+
+#delbtn{
+    background-color: red;
+}
+
+body{
+    background-color: rgb(235, 213, 116);
+    font-family: Arial;
+}
+
+td{
+    border: 2px solid black;
+    padding: 10px;
+    /* background-color: rgb(123, 122, 136); */
+}
+
+th{
+    background-color: rgb(177, 128, 68);
+}
+
+tr:nth-child(even){
+    background-color: rgb(107, 161, 170);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(123, 122, 136);
+}

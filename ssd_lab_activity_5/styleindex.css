@@ -1,0 +1,52 @@
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: #c9cfdff2;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    /* margin: auto; */
+    margin: 20px 100px;
+    padding: 50px;
+    box-shadow: 5px 10px #757086;
+    background-color: #3f5c74;
+    color: rgb(212, 193, 200);
+    border-radius: 25px;
+    }
+
+#user{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    border: 1px solid black;
+}
+
+#pass{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    border: 1px solid black;  
+}
+
+#btn{
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    align-self: center;
+    background-color: rgb(90, 128, 34);
+    color: white;
+}
+
+#user:hover #pass:hover {
+    border: 1px goldenrod ;
+}
