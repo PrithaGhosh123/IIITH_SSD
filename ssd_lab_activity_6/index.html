@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src = "indexfunc.js"></script>
+</head>
+
+<body>
+    <h1>Team Form</h1>
+    <form id >
+        <label for="manager">Manager Name:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="email">Group Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="username">Server username:</label>
+        <input type="text" name="username" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*" id="username"
+        title="Must contain at least one  number and one uppercase and lowercase letter" required>
+        <br>
+        <label for="password">Server Password</label>
+        <input type="password" id="password" required>
+        <br>
+        <label for="password">Confirm Server Password</label>
+        <input type="password" id="confirm_password" onfocusout="passwordvalid()" required>
+        <br>
+        <label for="team leader">Team Leader Name:</label>
+        <select id="name" name="name">
+            <option value="Abel">Abel</option>
+            <option value="Lora">Lora</option>
+            <option value="Brian">Brian</option>
+            <option value="Lucy">Lucy</option>
+            <option value="Judy">Judy</option>
+        </select>
+
+            <br>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p draggable="true" ondragstart="drag(event)" id="drag1">Abel</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag2">Lora</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag3">Brian</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag4">Lucy</p>
+                <p draggable="true" ondragstart="drag(event)" id="drag5">Judy</p>
+            </div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+
+            <button type="submit">Submit</button>
+ 
+    </form>
+</body>
