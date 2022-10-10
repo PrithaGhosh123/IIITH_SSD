@@ -1,0 +1,8 @@
+POST http://localhost:4000/app/login
+Content-Type: application/json
+
+{
+    "rollnumber": "202222222",
+    "password": "hello123",
+    "role": "TA"
+}
